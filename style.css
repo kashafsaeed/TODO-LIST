@@ -11,3 +11,16 @@
     user-select: none;
     -webkit-user-select: none;
 }
+body {
+    background: linear-gradient(to right, #0f1b4e 0%, #05011d 100%);
+}
+button {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #ede8e8;
+}
