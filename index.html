@@ -11,14 +11,32 @@
 
 </head>
 <body>
-     <div class="main">
+     <!-- <div class="main">
     <div class="container text-center p-5">
         <h1 class=" text-white fs-1 fw-bold" >TODO-LIST</h1>
         <input type="text" id="taskInput" class=" btn p-3  "  placeholder="Enter a new task">
         <button id="addTaskButton">Add Task</button>
         <ul id="taskList"></ul>
         </div>
+    </div> -->
+
+    <div class="main">
+        <div class="container text-center p-5">
+            <h1 class=" text-white fs-1 fw-bold" >TODO-LIST</h1>
+            <div class="input-group mb-3">
+                <input type="text" id="taskInput" class="form-control p-3" placeholder="Enter a new task">
+                <button id="addTaskButton"  onclick="addTask()" class="btn btn-primary p-3">Add Task</button>
+            </div>
+            <ul id="taskList" class="list-group"></ul>
+        </div>
+
     </div>
+    <!-- <div class="container">
+    <h2>📝 To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add new task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div> -->
 
 
     <!-- bootstrap js link-->
