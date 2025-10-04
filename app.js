@@ -1,6 +1,7 @@
 
 const input = document.getElementById("taskInput"),
   taskList = document.getElementById("taskList");
+
 function addTask() {
   if (!input.value.trim()) return;
   let li = document.createElement("li");
