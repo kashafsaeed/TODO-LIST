@@ -15,11 +15,16 @@ body {
     background: linear-gradient(to right, #0f1b4e 0%, #05011d 100%);
 }
 .container {
-    max-width: 100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     color: #ede8e8;
     background-color: #3a3f58;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-top: 50px;
+    text-align: center;
+
 }
 
 button {
@@ -56,4 +61,33 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     border-radius: 5px;
     padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 2px solid #555b7e;
+}
+#addTaskButton:hover {
+    background: #555b7e !important;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#taskInput {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    width: 15%;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#taskInput:focus {
+    border-color: #555b7e;
+    box-shadow: 0 0 5px rgba(85, 91, 126, 0.5);
+    outline: none;
+}
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
 }
