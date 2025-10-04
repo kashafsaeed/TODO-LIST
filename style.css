@@ -86,8 +86,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 5px rgba(85, 91, 126, 0.5);
     outline: none;
 }
-#taskList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
 }
