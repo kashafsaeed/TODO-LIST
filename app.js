@@ -79,50 +79,77 @@
 
 
 
-    //    const input=document.getElementById("taskInput"),
-    //       list=document.getElementById("taskList");
+//    const input=document.getElementById("taskInput"),
+//       list=document.getElementById("taskList");
 
-    // const addTask=()=>{ 
-    //   if(!input.value.trim()) return;
-    //   list.innerHTML+=`<li>
-    //     <span onclick="this.classList.toggle('completed')">${input.value}</span>
-    //     <button onclick="editTask(this)">✏</button>
-    //     <button onclick="this.parentNode.remove()">❌</button>
-    //   </li>`;
-    //   input.value="";
-    // };
+// const addTask=()=>{ 
+//   if(!input.value.trim()) return;
+//   list.innerHTML+=`<li>
+//     <span onclick="this.classList.toggle('completed')">${input.value}</span>
+//     <button onclick="editTask(this)">✏</button>
+//     <button onclick="this.parentNode.remove()">❌</button>
+//   </li>`;
+//   input.value="";
+// };
 
-    // const editTask=btn=>{
-    //   let li=btn.parentNode,span=li.querySelector("span");
-    //   li.innerHTML=`<input value="${span.textContent}"><button onclick="saveTask(this)">✅</button>`;
-    // };
+// const editTask=btn=>{
+//   let li=btn.parentNode,span=li.querySelector("span");
+//   li.innerHTML=`<input value="${span.textContent}"><button onclick="saveTask(this)">✅</button>`;
+// };
 
-    // const saveTask=btn=>{
-    //   let li=btn.parentNode,box=li.querySelector("input");
-    //   li.innerHTML=`<span onclick="this.classList.toggle('completed')">${box.value}</span>
-    //     <button onclick="editTask(this)">✏</button>
-    //     <button onclick="this.parentNode.remove()">❌</button>`;
-    // };
+// const saveTask=btn=>{
+//   let li=btn.parentNode,box=li.querySelector("input");
+//   li.innerHTML=`<span onclick="this.classList.toggle('completed')">${box.value}</span>
+//     <button onclick="editTask(this)">✏</button>
+//     <button onclick="this.parentNode.remove()">❌</button>`;
+// };
 
-    // input.addEventListener("keypress",e=>e.key==="Enter"&&addTask());
+// input.addEventListener("keypress",e=>e.key==="Enter"&&addTask());
 
 
-    function addTask() {
-  let input = document.getElementById("taskInput");
-  if (input.value.trim() === "") return;
+//     function addTask() {
+//   let input = document.getElementById("taskInput");
+//   if (input.value.trim() === "") return;
 
+//   let li = document.createElement("li");
+//   li.className = "list-group-item";
+//   li.innerHTML = `${input.value} 
+//     <button onclick="editTask(this)" class="btn btn-secondary btn-sm float-end me-2">Edit</button>;
+//     <button onclick="this.parentElement.remove()" class="btn btn-danger btn-sm float-end">Delete</button>`;
+
+
+//   document.getElementById("taskList").appendChild(li);
+//   input.value = "";
+// } 
+//   document.getElementById("taskInput").addEventListener("keydown", function(e) {
+//   if (e.key === "Enter") addTask();
+// });
+
+
+
+
+
+
+
+
+
+
+
+const input = document.getElementById("taskInput"),
+  taskList = document.getElementById("taskList");
+function addTask() {
+  if (!input.value.trim()) return;
   let li = document.createElement("li");
   li.className = "list-group-item";
-  li.innerHTML = `${input.value} 
-    <button onclick="editTask(this)" class="btn btn-secondary btn-sm float-end me-2">Edit</button>;
-    <button onclick="this.parentElement.remove()" class="btn btn-danger btn-sm float-end">Delete</button>`;
-  
-  
-  document.getElementById("taskList").appendChild(li);
+  li.innerHTML = `${input.value}
+        <button onclick="editTask(this)" class="btn btn-secondary btn-sm float-end me-2">Edit</button>
+        <button onclick="this.parentElement.remove()" class="btn btn-danger btn-sm float-end">Delete</button>`;
+  taskList.append(li);
   input.value = "";
-} 
-  document.getElementById("taskInput").addEventListener("keydown", function(e) {
-  if (e.key === "Enter") addTask();
-});
+}
+function editTask(btn) {
+  input.value = btn.parentElement.firstChild.textContent.trim();
+  btn.parentElement.remove();
+}
+input.addEventListener("keydown", e => e.key === "Enter" && addTask());
 
-  
