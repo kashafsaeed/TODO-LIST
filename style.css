@@ -159,14 +159,16 @@ h6 {
     cursor: pointer;
     font-size: 14px;
     transition: background 0.3s ease;
-    background:  #3A3F58;
+    background: #3A3F58;
     font: 1em sans-serif;
     font-weight: 600;
     margin-top: 20px;
     border: 2px solid #565f8b;
 
 
-}.delete-btn:hover {
+}
+
+.delete-btn:hover {
     background: #444b6e;
     color: #fff !important;
     transition: all 0.3s ease;
