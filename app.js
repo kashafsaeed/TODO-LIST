@@ -1,10 +1,10 @@
 
-const input = document.getElementById("taskInput"),
+var input = document.getElementById("taskInput"),
   taskList = document.getElementById("taskList");
 
 function addTask() {
   if (!input.value.trim()) return;
-  let li = document.createElement("li");
+  var li = document.createElement("li");
   li.className = "list-group-item";
   li.innerHTML = `${input.value}
         <button onclick="editTask(this)" class="btn btn-secondary btn-sm float-end me-2">Edit</button>
