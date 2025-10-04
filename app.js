@@ -150,6 +150,11 @@ function addTask() {
 function editTask(btn) {
   input.value = btn.parentElement.firstChild.textContent.trim();
   btn.parentElement.remove();
+
+}
+function deletebtn() {  
+  taskList.innerHTML="";
+
 }
 input.addEventListener("keydown", e => e.key === "Enter" && addTask());
 
