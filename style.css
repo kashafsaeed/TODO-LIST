@@ -151,12 +151,13 @@ h6 {
 
 }
 
-/* .list-group-item .btn {
-    padding: 5px 10px;
-    font-size: 14px;
+.delete-btn {
+    color: #fff !important;
     border: none;
-    color: #fff;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
     transition: background 0.3s ease;
-} */
+    background:  #444b6e;
+}
