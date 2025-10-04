@@ -154,10 +154,21 @@ h6 {
 .delete-btn {
     color: #fff !important;
     border: none;
-    padding: 5px 10px;
+    padding: 15px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
     transition: background 0.3s ease;
-    background:  #444b6e;
+    background:  #3A3F58;
+    font: 1em sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 2px solid #565f8b;
+
+
+}.delete-btn:hover {
+    background: #444b6e;
+    color: #fff !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
