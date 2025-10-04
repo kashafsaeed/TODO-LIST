@@ -11,9 +11,11 @@
     user-select: none;
     -webkit-user-select: none;
 }
+
 body {
     background: linear-gradient(to right, #0f1b4e 0%, #05011d 100%);
 }
+
 .container {
     margin: 0 auto;
     padding: 10px;
@@ -30,10 +32,17 @@ body {
 button {
     cursor: pointer;
 }
+
 a {
     color: inherit;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
     color: #ede8e8;
 }
@@ -66,12 +75,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
     border: 2px solid #555b7e;
 }
+
 #addTaskButton:hover {
     background: #555b7e !important;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 #taskInput {
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -81,11 +92,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 #taskInput:focus {
     border-color: #555b7e;
     box-shadow: 0 0 5px rgba(85, 91, 126, 0.5);
     outline: none;
 }
+
 .main {
     display: flex;
     justify-content: center;
@@ -94,27 +107,30 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     margin: auto;
 }
+
 .btn {
-     font-size: medium;
-        font-weight: bold;
-        background-color: #555b7e !important;
-        color: #fff;
-        border: 2px solid #555b7e !important;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border-radius: 5px;
-        padding: 10px 20px;
-        cursor: pointer;
-        margin: 5px;
-        text-decoration: none;
-        text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #555b7e !important;
+    color: #fff;
+    border: 2px solid #555b7e !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+
 
 }
+
 .btn:hover {
     background-color: #3a3f58 !important;
     color: #fff;
-    transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
 }
 
 
@@ -132,8 +148,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 500;
     border: 1px solid #444b6e;
-    
+
 }
+
 /* .list-group-item .btn {
     padding: 5px 10px;
     font-size: 14px;
