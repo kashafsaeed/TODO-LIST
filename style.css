@@ -94,3 +94,58 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     margin: auto;
 }
+.btn {
+     font-size: medium;
+        font-weight: bold;
+        background-color: #555b7e !important;
+        color: #fff;
+        border: 2px solid #555b7e !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 5px;
+        text-decoration: none;
+        text-align: center;
+
+}
+.btn:hover {
+    background-color: #3a3f58 !important;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.list-group-item {
+    background: #555b7e;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #444b6e;
+    
+}
+.list-group-item .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.list-group-item input {
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    
+}
